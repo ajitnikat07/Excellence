@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: #d1750d;
+    position: fixed;
+    width: 100%;
+}
+
+.image{
+    padding-top:78px;
+}
+
+p{
+    padding-top: 10px;
+}

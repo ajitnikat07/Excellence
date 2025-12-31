@@ -1,0 +1,54 @@
+/* 
+By default position of the object is static..
+static me top left right bottom kam nahi karta hai
+
+*/
+
+*{
+    margin: 0;
+}
+
+.container{
+    background-color: blanchedalmond;
+    margin-left: 200px;
+    margin-top: 150px;
+    height: 800px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color: green;
+    position: relative;
+}
+
+/* top bottom left and right */
+
+/*
+absolute position leave kr sakta hai..anyone can take its place and manage itself with respect to the viewport size.
+same as fixed position
+*/
+
+.box3{
+    /*
+    Position of the object is fixed here..
+    */
+    background-color: blueviolet;
+    position:fixed;
+    top: 50px;
+    left: 20px;
+}
+
+.box4{
+    background-color: goldenrod;
+}
+

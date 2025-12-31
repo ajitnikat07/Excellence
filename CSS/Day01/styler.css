@@ -1,0 +1,40 @@
+/*Universal Selector*/
+
+/*
+*{
+    background-color: aqua;
+    color:brown;
+}
+
+*/
+
+/* Group Selection of the elements */
+
+/* 
+h1,h2,p,#third
+{
+    background-color:aqua;
+} 
+*/
+
+/*Attribute Selector CSS Technique*/
+
+h2[draggable="true"]
+{
+    background-color:blueviolet;
+}
+
+h2[contenteditable="true"]
+{
+    background-color: coral;
+}
+
+/* Descendent Selection of the tag */
+section p{
+    background-color:aqua;
+}
+
+/* Select by the child */
+section>p{
+    background-color:lightgreen;
+}

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+
+.card{
+
+    display: inline-block;
+    position: relative;
+}
+
+.image{
+    position: relative;
+}
+
+img{
+    width: 350px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+.Box{
+    display: inline-block;
+}
+
+.Restaurant{
+    margin-bottom: 10px;
+}
+
+.Restaurant_Name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Restaurant_rating{
+    color: white;
+    background-color: green;
+    height: 20px;
+    padding: 5px;
+    position:relative;
+    margin-left: 75px;
+}
+
+.food_item{
+    font-size: 16px;
+    color: gray;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.food_rate,.distance {
+    position: absolute;
+    right: 10px;
+}
+
+.location{
+    font-size: 16px;
+    color: gray;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.distance{
+    font-weight: bold;
+    color: black;
+}
+
+.discount{
+    font-size: 30px;
+    color: white;
+    background-color: aqua;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}

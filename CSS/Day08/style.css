@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color:rgb(255,239,239);
+}
+
+.card{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top:10px;
+    cursor: pointer;
+    border: 10px solid rgb(255,239,239) ;
+}
+
+.card:hover{
+    background-color: white;
+    border-color: white;
+}
+
+.Box{
+    /* To combine the all means 2 content in one div */
+    display:inline-block;
+}
+.image{
+    position:relative;
+}
+
+.offer:hover{
+    background-color:blue;
+}
+
+.offer{
+    font-size: 30px;
+    color:white;
+    background-color:rgba(218, 43, 16, 0.6);
+    position: absolute;
+    bottom:20px;
+    left: 5px;
+    height: 25px;
+    width: auto;
+}
+
+.img{
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.Restaurant_Name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Restaurant{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.location{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.food{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rating{
+    background-color: green;
+    height: 18px;
+    position: absolute;
+    right: 5px;
+    color: white;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+
+.food,.place{
+    position: relative;
+    font-size: 15px;
+    color:gray
+}
+
+.location{
+    position: relative;
+}
+
+.price,.distance{
+    /*Viwport ke hisab se right me jayege hence parent ko relative maano*/
+    position: absolute;
+    right: 5px;
+}
+
+.distance{
+    font-weight:bold;
+    font-size: 15px;
+}

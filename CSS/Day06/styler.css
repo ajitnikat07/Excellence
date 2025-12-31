@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+/* 
+This is the main header it is used for heading purpose 
+*/
+header{
+    background-color:aqua;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    right: 0px;
+
+}
+
+/*
+apply padding-top:60 in below property also...
+or margin-top: 60px px also works definitely
+*/
+
+main{
+    margin-top: 60px;
+}

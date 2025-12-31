@@ -1,0 +1,24 @@
+h1{
+    color:aquamarine;
+    background-color: black;
+}
+
+ul{
+    background-color: blueviolet;
+}
+
+/*Select By The Class Name And need to apply dot(.) first*/
+.first{
+    background-color: blue;
+}
+
+.second{
+    background-color: aqua;
+}
+
+/*Select By The Id and # ko use karna hai property dene ke liye */
+
+#third{
+    background-color: pink;
+}
+

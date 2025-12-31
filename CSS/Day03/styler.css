@@ -1,0 +1,37 @@
+body{
+    background-color:aqua;
+}
+
+/* !important is very important it break down all the rules */
+h1{
+    background-color: blanchedalmond !important;
+    color: blue;
+}
+
+/* Here we use the id selector */
+#first_id{
+    background-color: pink;
+}
+
+/* Here we use the class selector*/
+.first_class{
+    background-color: aqua;
+}
+
+/* Here we use the attribute sector */
+h1[draggable="true"]{
+    background-color: red;
+}
+
+/* Descendent Selector Used Here */
+body h1{
+    background-color: rgb(44, 44, 33);
+}
+
+/* Child Selector Used Here */
+body > h1{
+    background-color: lime;
+}
+
+/* Priority: Id > Attribute > Class > Child == Descendent > Element == GroupElement */
+/* Inline > Internal == External Css */

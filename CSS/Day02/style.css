@@ -1,0 +1,43 @@
+
+/*
+color is not changing in this way.block level elemnt ka child block level nahi ho sakta
+
+p>div
+{
+    color:blue;
+}
+
+*/
+
+h1{
+    color:rgba(123, 120, 18,1);
+}
+h3{
+    color:#000111;
+}
+
+/*
+1.Change By RGB
+2.0-255
+3.HexaDecimal Me Likhna
+4.hsl(hue,saturation,lightness) for giving the color
+
+5.pixel size is determined by the Device size
+6.em is related to parent font size
+7.rem is relatd to the html font size
+8.% is related to parent font size
+
+*/
+h1{
+    color:rgba(106, 20, 89, 06);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-size: 2em;
+}
+p{
+    color:hsl(100, 80%, 20%)
+}
+
+body{
+    background-color: blanchedalmond;
+}

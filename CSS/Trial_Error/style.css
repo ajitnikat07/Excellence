@@ -1,0 +1,17 @@
+
+img{
+    display: inline-block;
+}
+
+.name{
+    display:inline-block;
+}
+
+#star{
+    position: relative;
+    left: 43%;
+}
+
+.box{
+    display: inline-block;
+}

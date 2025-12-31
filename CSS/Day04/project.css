@@ -1,0 +1,31 @@
+
+.card{
+    /* Card ki width 30 hai */
+    width: 30vw;
+    height: 10vw;
+    background-color: aqua;
+    border: 5px green solid;
+    padding: 10px;
+    margin: 20px 20px 20px 35vw;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+h2{
+    color: green;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    color:chocolate;
+}

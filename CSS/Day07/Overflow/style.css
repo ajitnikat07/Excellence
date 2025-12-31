@@ -1,0 +1,10 @@
+
+/*
+Value Of Overflow of the elements can be hidden, scroll, auto
+*/
+.container{
+    height: 200px;
+    width:200px;
+    background-color: yellow;
+    overflow:hidden;
+}

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding: 1rem;
+}
+
+.left{
+    color: white;
+}
+
+.right button{
+    background-color: red;
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    padding-top: 0.1rem;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding: 1.5rem 0rem;
+}
+
+.searching{
+    width: 400px;
+    max-width: 60%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.search>button{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(./images.jfif);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.hero >h2{
+    color: rgb(240, 4, 208);
+    font-size: 2rem;
+}
+
+.hero > button{
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.mover{
+    text-align: center;
+}
+
+.mover > h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.images{
+    height:300px;
+}
+.movie{
+    display: flex;
+    overflow-x: scroll
+}
+
+.card{
+    border: 0.5rem solid grey;
+    background-color: rgb(208,199,199);
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+.bottom{
+    margin: 2rem;
+    text-align: center;
+}
+
+.bottom > img{
+    width: 80%;
+    border-radius: 10px;
+    height: 5rem;
+}
+
+@media(max-width:500px){
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

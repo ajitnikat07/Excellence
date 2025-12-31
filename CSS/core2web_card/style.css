@@ -1,0 +1,84 @@
+.card{
+    position: relative;
+    display: inline-block;
+    background-color: aqua;
+    margin-left: 32px;
+    background: linear-gradient(180deg, #1b1f2e, #141827);
+    border-radius: 16px;
+    color: #fff;
+    height: 325px;
+    width: 24%;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .price {
+  background-color: gold;
+  cursor: pointer;
+}
+
+.image{
+    display: inline-block;
+    position: relative;
+    right:20px;
+    bottom: 20px;
+}
+
+.price {
+  width: 150px;
+  position: absolute;
+  top: 130px;
+  left: 55%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 5px;
+  border-radius: 20px;
+  
+}
+.validity{
+    color: whitesmoke;
+    font-size: 15px;
+    margin-top: 0px;
+    padding-left:30px;
+}
+
+.months{
+    color: white;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #00aaff,
+    transparent
+  );
+  box-shadow: 0 0 8px rgba(0,170,255,0.6);
+}
+
+.details{
+    padding-left: 30px;
+}
+
+.Box{
+    display:inline-block;
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.color{
+    color: gold;
+}
+
+.quiz{
+    padding-left: 30px;
+    font-size: 14px;
+    padding-bottom: 60px;
+}

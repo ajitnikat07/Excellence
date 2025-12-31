@@ -1,0 +1,43 @@
+.first{
+    /* display: inline; */
+    background-color: orangered;
+    height: 200px;
+    width: 150px;
+    margin: 40px;
+}
+
+.second{
+    /* display: inline; */
+    background-color: blue;
+    height: 200px;
+    width: 250px;
+    margin: 40px;
+}
+
+span{
+    /* 
+    We cant give height and width to the inline elements. we can give it using property display:block 
+    property
+    */
+
+    display: inline-block;
+    /*
+    Behave like inline elemnt but we can give height and width to it also
+    */
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+/*
+block element -> Width,Height,Margin is acessible
+*/
+
+/*
+Inline element ->width,height nahi de sakte or margin sirf horizontal milta hai vertical milta jarur hai but visible nahi hota..Output me
+*/
+
+/*
+Inline block-> element behaves like inline but we can give width,height and margin to it..  
+*/

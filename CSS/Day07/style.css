@@ -1,0 +1,39 @@
+
+.box{
+    display:inline-block;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+
+.container{
+    background-color: aqua;
+}
+
+/*
+Box1 will be on upper hand side than box2 and box3
+*/
+.box1{
+    background-color: yellow;
+    position: relative;
+    left: 250px;
+    z-index:5;
+}
+
+.box2{
+    background-color: orange;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    z-index: 1;
+
+}
+
+.box3{
+    background-color: red;
+
+}
+
+.box4{
+    background-color: green;
+}

@@ -1,0 +1,49 @@
+/* Box Model (Content Box Ke under wrap up hota hai..) */
+
+h2{
+    background-color: rgb(38, 175, 175);
+    width: 300px;
+    height: 200px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    /* Shortcuts: border: 5px solid black; */
+}
+
+h4{
+    background-color: plum;
+    
+    /* 
+    border-left-width: 10px;
+    border-left-color: greenyellow;
+    border-left-style: solid; 
+    */
+
+    /*
+    When we have 2 options for border width then it is allocated to top-bottom and left-right respectively.
+    */
+
+    border-width: 10px 20px;
+    border-color: greenyellow;
+    border-style: solid;
+    padding:10px 20px 30px 40px; /* top right bottom left */
+}
+
+ul{
+    /*
+    Padding se content or border me distance aa jata hai.means spacing aati hai.
+    */
+    
+    background-color: pink;
+    border: 4px dashed purple;
+}
+
+p{
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: tomato;
+    padding: 15px;
+}

@@ -1,0 +1,17 @@
+/* Percentage(%) of view port width */
+h1{
+    background-color: blanchedalmond;
+    font-style: italic;
+    font-size:10vw;
+    background-color: goldenrod;
+    text-transform: lowercase;
+}
+
+/* Font Stretch And Font varient */
+p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 40px;
+    font-weight: 750;
+    font-style: italic;
+}

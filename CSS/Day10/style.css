@@ -1,0 +1,40 @@
+.container{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    align-items: flex-start;
+}
+
+/*
+1.by default flex-direction is the row that means in row format element is arranged.
+
+2.row:- Horizontal is main-axis.
+column:- Vertical is main-axis.
+
+3.justify-content:- It will work only for main-axis
+Align-items:-It will work on cross axis mainly.
+*/
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    margin: 5px;
+}
+
+.box1{
+    background-color: red;
+}
+
+.box2{
+    background-color:green;
+}
+
+.box3{
+    background-color: blue;
+}
+
+.box4{
+    background-color:orange;
+}   
