@@ -1,0 +1,49 @@
+.header{
+    background-color: white;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.zomato_heading{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.input,.select{
+    border:none;
+}
+.input{
+    background-color:white;
+    width: 20rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    margin-left: 0.9rem;
+}
+.select{
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 100px;
+    margin-left: 0.2rem;
+}
+
+.location_container{
+    padding-top: 0rem;
+    height: 3rem;
+    width: 35rem;
+    margin-left: 12rem;
+    margin-top: 1rem;
+    border: 2.5px solid whitesmoke;
+}
+
+.divider{
+    font-size: 2rem;
+    color: grey;
+}
+
+.symbol{
+    margin-left: 0.5rem;
+}

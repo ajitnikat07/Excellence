@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    color: orange;
+    background-color: aqua;
+}
+
+/* text-align: left,right,center */
+
+.container{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h1{
+    background-color: pink;
+}
+
+p{
+    background-color: orange;
+}
+
+button{
+    background-color:red;
+}
+
+.paragraph{
+    background-color: green;
+    text-align-last: right;
+    line-height: 50px;
+}
+
+.heading1{
+    background-color: yellow;
+    text-align: right;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
