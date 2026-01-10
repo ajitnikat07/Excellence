@@ -1,14 +1,28 @@
-h1{
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    padding: 10px;
-    box-sizing: border-box;
-    /* By Default box-sizing is content box */
+/* Simple Mars orbit demo styles */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--orbit-size:300px}
+body{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:2rem;background:#071026;color:#fff;font-family:Segoe UI, Roboto, Arial, sans-serif}
+h1{font-size:1.5rem;margin-bottom:1rem}
+
+.system{width:100%;display:flex;justify-content:center}
+.orbit{width:var(--orbit-size);height:var(--orbit-size);border-radius:50%;border:4px dashed #ffdd57;position:relative;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+
+/* Planet (Mars) sits at center and uses transform rotation+translate to orbit */
+.planet{width:28px;height:28px;background:#c1440e;border-radius:50%;position:absolute;top:50%;left:50%;transform:rotate(0deg) translateX(calc(var(--orbit-size) / 2 - 18px));box-shadow:0 6px 18px rgba(0,0,0,0.45);border:2px dashed rgba(255,255,255,0.6)}
+
+/* subtle inner ring for visual depth */
+.orbit::after{content:"";position:absolute;inset:6px;border-radius:50%;border:1px dashed rgba(255,255,255,0.08);pointer-events:none}
+
+/* Orbit animation: rotate the planet around the center */
+@keyframes orbit-move{from{transform:rotate(0deg) translateX(calc(var(--orbit-size) / 2 - 18px)) rotate(0deg)}to{transform:rotate(360deg) translateX(calc(var(--orbit-size) / 2 - 18px)) rotate(-360deg)}}
+.planet{animation:orbit-move 6s linear infinite}
+
+/* Responsive adjustments for small screens (<=500px) */
+@media (max-width:500px){
+    :root{--orbit-size:180px}
+    h1{font-size:1.15rem}
+    .planet{width:22px;height:22px;border-width:1px}
 }
-h2{
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    padding: 10px;
-}
+
+/* accessibility focus style */
+.planet:focus{outline:3px solid rgba(255,220,87,0.6)}

@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border-width: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+}
+
+.box:hover{
+    /* transform: translate(400px,300px); */
+    /* transform: scale(1,3); */
+    /* transform: rotate(-360deg); */
+    /* transform: skew(-90deg); */
+    /* transform: translate(200px,300px) scale(2) rotate(50deg); */
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+
+/* single translate: X axis */
+/* double value in translate: Xaxis,Yaxis */
+/* X-axis: position:right,else left */
+/* Y-axis: position:down,else up */
+
+/* sclae single value it will scale by x */
+/* scale have 2 values it will increase width by x times and height by y times */
+
+/* rotate the box:positive value clockwise else anticlockwise */

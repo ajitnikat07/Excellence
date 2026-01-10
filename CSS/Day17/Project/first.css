@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orbit{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background-color: blanchedalmond;
+}
+
+.sun{
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* absolute me with respect to parent arrange hota hai */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mars{
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: mar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mar{
+    from{
+        transform: rotate(0deg) translate(200px);
+    }
+    to{
+        transform: rotate(360deg) translate(200px);
+    }
+}
+
+.earth{
+    height: 60px;
+    width: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: earth;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes earth{
+    from{
+        transform: rotate(0deg) translate(300px);
+    }
+    to{
+        transform: rotate(360deg) translate(300px);
+    }
+}
+
+
+.jupiter{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: jupi;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes jupi{
+    from{
+        transform: rotate(0deg) translate(400px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(400px) rotate(-360deg);
+    }
+}
