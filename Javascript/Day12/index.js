@@ -83,3 +83,10 @@ function gun({name,age}){
 }
 gun(obj5);
 
+// string type
+let str1 = "Hello"
+console.log(typeof str1);
+
+//object type
+let str2=new String("World");
+console.log(typeof str2);
