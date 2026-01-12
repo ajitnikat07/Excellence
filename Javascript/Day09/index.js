@@ -82,3 +82,4 @@ console.log(min);
 
 const sec = Math.floor((date/(1000))%60)
 console.log(`CountDown Timer: Days:${days} hour: ${hour} minutes: ${min} seconds: ${sec}`);
+
