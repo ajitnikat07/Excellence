@@ -69,7 +69,6 @@ const suman = function(...number){
     //using for loop sum can be print
     console.log(number);
 }
-
 suman(2,3,4);
 
 
@@ -82,5 +81,5 @@ let obj5={
 function gun({name,age}){
     console.log(name,age)
 }
-
 gun(obj5);
+
