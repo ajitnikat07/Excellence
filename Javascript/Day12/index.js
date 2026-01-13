@@ -1,11 +1,11 @@
 // Hashing Technique is used to store Objects In Heap
-let obj1 = {
-    name:"Sharma",
-    age:45
-};
+// let obj1 = {
+//     name:"Sharma",
+//     age:45
+// };
 
-console.log(obj1.name);
-console.log(obj1.age);
+// console.log(obj1.name);
+// console.log(obj1.age);
 
 // Functions In Javascript
 // function greet(){
@@ -90,3 +90,21 @@ console.log(typeof str1);
 //object type
 let str2=new String("World");
 console.log(typeof str2);
+
+//How to change prototype
+let obj1={
+    a:1,
+    b:2
+}
+let obj2={
+    c:3,
+    d:4
+}
+
+// obj2.__proto__=obj1;
+// console.log(obj2.__proto__);
+// console.log(obj2.a);
+
+//Alternative method
+obj2=Object.create(obj1)
+console.log(obj2.a);
