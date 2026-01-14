@@ -17,16 +17,15 @@ let arr1=["banana","apple","orange","banana","apple","orange","grapes"];
 // acc={ } {acc is a accumulator}
 
 const result1=arr1.reduce((acc,curr)=>{
+
      if(acc.hasOwnProperty(curr)){
         acc[curr]++;
      }else{
         acc[curr]=1
      }
      return acc;
-},{});
-
+},{orange:1});
 console.log(result1);
-
 
 let obj ={
    name:"ajay",
