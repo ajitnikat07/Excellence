@@ -26,3 +26,4 @@ document.querySelector("li").remove();
 
 //hw proj:-
 //bg color will change in 5 seconds
+
