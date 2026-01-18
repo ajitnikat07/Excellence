@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #10278b 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+#quizForm {
+    margin-bottom: 20px;
+}
+
+.questions {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+}
+
+.questions p {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.questions label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.questions label:hover {
+    background-color: #e8e8ff;
+}
+
+.questions input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #667eea;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f7ff;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+#result h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+#result p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+#result strong {
+    color: #764ba2;
+}
+
+#result:not(:empty) {
+    display: block;
+}
