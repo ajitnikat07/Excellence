@@ -1,0 +1,53 @@
+<!-- Astrology website -->
+<!-- DOB -->
+<!-- Prediction about you -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroVision | Know Your Destiny</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AstroVision</h1>
+      <p>Discover your zodiac sign and life path through astrology</p>
+    </header>
+
+    <form id="astroForm">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" id="firstName" placeholder="Enter first name" required>
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" id="lastName" placeholder="Enter last name" required>
+      </div>
+      <div class="field">
+        <label>Birth Date</label>
+        <input type="number" id="day" placeholder="DD" min="1" max="31" required>
+      </div>
+      <div class="field">
+        <label>Birth Month</label>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" required>
+      </div>
+      <div class="field">
+        <label>Birth Year</label>
+        <input type="number" id="year" placeholder="YYYY" required>
+      </div>
+
+      <button class="btn" type="submit">Reveal My Astrology</button>
+      
+    </form>
+    <div class="result" id="result"></div>
+    <footer>
+      © 2026 AstroVision | Built with HTML, CSS & JavaScript
+    </footer>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

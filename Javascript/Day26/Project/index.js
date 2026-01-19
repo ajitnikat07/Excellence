@@ -53,7 +53,8 @@ const printer = (event)=>{
         turn = "O";
     }
 
-    if(total_turn==9){
+    if(total_turn==9)
+    {
         document.getElementById('winningMessage').innerHTML = "Match is draw";
     }
 }
@@ -70,7 +71,7 @@ Restart.addEventListener('click',()=>{
     Array.from(cell).forEach((value)=>{
         value.innerHTML = "";
     })
-
+    
     turn = "O";
     total_turn = 0;
     board_array = new Array(9).fill("E");
