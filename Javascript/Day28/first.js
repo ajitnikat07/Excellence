@@ -18,5 +18,10 @@ function meet(name){
     console.log(`Hello ${name} ,I will meet you in Delhi`);
 }
 
+function edit(name){
+    console.log(`Edit ${name}, of the user`);
+}
+
 fetchUser(meet);
 fetchUser(greet);
+fetchUser(edit);
