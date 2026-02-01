@@ -1,19 +1,19 @@
 // ===== JAVASCRIPT TEMPERATURE FINDER APP =====
 // This app fetches real weather data from an API and displays temperature
 
-// ===== 1. GET REFERENCES TO HTML ELEMENTS =====
+// ==== 1. GET REFERENCES TO HTML ELEMENTS =====
 // This is like getting pointers to the elements we want to interact with
 
-const cityInput = document.getElementBy('cityInput');        
+const cityInput = document.getElementById('cityInput');        
 // Input field for city name
 
-const searchBtn = document.getElementBy('searchBtn');        
+const searchBtn = document.getElementById('searchBtn');        
 // Search button
 
-const weatherInfo = document.getElementBy('weatherInfo');    
+const weatherInfo = document.getElementById('weatherInfo');    
 // Container for weather data
 
-const loading = document.getElementBy('loading');            
+const loading = document.getElementById('loading');            
 // Loading indicator
 
 const error = document.getElementById('error');        
@@ -24,7 +24,6 @@ const temperature = document.getElementById('temperature');
 const description = document.getElementById('description');
 const humidity = document.getElementById('humidity');
 const windSpeed = document.getElementById('windSpeed');
-
 
 // ===== 2. ADD EVENT LISTENERS =====
 // Event listeners trigger functions when something happens (like clicking a button)
@@ -57,8 +56,6 @@ function handleSearch() {
     // Call function to fetch weather data
     fetchWeatherData(city);
 }
-
-
 // ===== 4. FUNCTION: fetchWeatherData =====
 // This function gets the coordinates of a city, then fetches weather data
 
@@ -104,7 +101,7 @@ async function fetchWeatherData(city) {
         
         // Hide loading indicator
         loading.style.display = 'none';
-        
+
     } catch (err) {
         // If anything goes wrong, show error message
         loading.style.display = 'none';
@@ -171,7 +168,6 @@ function getWeatherDescription(code) {
     return weatherCodes[code] || 'Unknown weather';
 }
 
-
 // ===== 7. FUNCTION: showError =====
 // This function displays error messages to the user
 
@@ -181,7 +177,6 @@ function showError(message) {
     weatherInfo.style.display = 'none';                       // Hide weather info
     loading.style.display = 'none';                           // Hide loading indicator
 }
-
 
 // ===== KEY JAVASCRIPT CONCEPTS USED =====
 // 1. DOM Manipulation: document.getElementById(), .textContent, .style.display
